@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+:root {
+  --primary: #c70039;
+}
+.card__pizza,
+h3,
+h4 {
+  font-family: "PT Sans Narrow", sans-serif;
+  transition: transform 0.2s;
+}
+
+.card__pizza:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.badge:after {
+  content: attr(value);
+  font-size: 12px;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 50%;
+  padding: 0 5px;
+  position: relative;
+  left: -8px;
+  top: -10px;
+  opacity: 0.9;
+}
+.css-1s2u09g-control {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  width: auto !important;
+}
+.css-1s2u09g-control:focus {
+  outline: none !important;
+}
+.css-1s2u09g-control::selection {
+  background: none !important;
+  outline: none !important;
+}

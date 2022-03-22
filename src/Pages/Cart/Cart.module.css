@@ -1,0 +1,72 @@
+.product__heading {
+  background-color: #c70039;
+  color: white;
+  padding: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  width: 100% !important;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.product__item {
+  background-color: rgb(245, 237, 237);
+  color: black;
+  padding: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  width: 100% !important;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.checkout__button {
+  background-color: #c70039;
+  color: white;
+  padding: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  width: 20% !important;
+  border-radius: 20px;
+  border-color: var(--primary);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+}
+.back__button {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  width: 20% !important;
+  border-radius: 20px;
+  border-color: var(--primary);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 21px;
+  margin-right: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.back__button:hover {
+  background-color: white;
+  color: var(--primary);
+  border-color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.checkout__btn {
+  background-color: #c70039;
+  border: none;
+  color: white;
+}
+.checkout__button:hover {
+  background-color: #fff;
+  color: #c70039;
+  border: 1px solid #c70039;
+}
+.checkout__btn:hover {
+  background-color: #fff;
+  color: #c70039;
+}
