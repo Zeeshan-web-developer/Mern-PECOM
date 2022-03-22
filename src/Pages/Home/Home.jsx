@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Row, Container, Col } from "react-bootstrap";
-import { Navbar, Search, Pizza, Footer, Slider } from "../../components";
+import { Navbar, Search, Pizza, Footer, Slider } from "../../components/Index";
 import { getAllPizzas } from "../../store/actions";
 import Spinner from "../../common/Spinner";
 function App() {
