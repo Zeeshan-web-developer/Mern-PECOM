@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Col, Row, Card } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { loginUser } from "../../../store/actions";
 import Styles from "./Login.module.css";
 function login() {
-  const [validated, setValidated] = useState(false);
+  const dispatch = useDispatch();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
   const history = useHistory();
   const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
+    event.preventDefault();
+    console.log(formData);
+    dispatch(loginUser(formData));
   };
   return (
     <div className={Styles.container}>
@@ -24,13 +26,18 @@ function login() {
                 <h3 className="pt-4 text-center pb-4">Login</h3>
               </Card.Header>
               <Card.Body>
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit}>
                   <Row className="mb-3">
                     <Form.Group md="4" controlId="validationCustom01">
                       <Form.Label>Email</Form.Label>
                       <Form.Control
                         required
                         type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={(e) => {
+                          setFormData({ ...formData, email: e.target.value });
+                        }}
                         placeholder="Enter Your Email"
                       />
                       <Form.Control.Feedback></Form.Control.Feedback>
@@ -43,6 +50,14 @@ function login() {
                       <Form.Control
                         required
                         type="text"
+                        name="password"
+                        value={formData.password}
+                        onChange={(e) => {
+                          setFormData({
+                            ...formData,
+                            password: e.target.value,
+                          });
+                        }}
                         placeholder="Enter Your Password"
                       />
                       <Form.Control.Feedback></Form.Control.Feedback>

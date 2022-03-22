@@ -4,10 +4,16 @@ import {
   REGISTER_USER,
   REGISTER_USER_SUCESSFUL,
   REGISTER_USER_FAILED,
+  LOGIN_USER,
+  LOGIN_USER_SUCESSFUL,
+  LOGIN_USER_FAILED,
+  GET_LOGGEDIN_USER,
+  GET_LOGGEDIN_USER_SUCESSFUL,
+  GET_LOGGEDIN_USER_FAILED,
 } from "./types";
 const initialState = {
   pageNo: 0,
-  user: {},
+  user: null,
   error: null,
   loading: false,
 };
@@ -36,6 +42,40 @@ export default (state = initialState, { type, payload }) => {
         user: payload,
       };
     case REGISTER_USER_FAILED:
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    case LOGIN_USER:
+      return {
+        ...state,
+        loading: true,
+      };
+    case LOGIN_USER_SUCESSFUL:
+      return {
+        ...state,
+        loading: false,
+        user: payload,
+      };
+    case LOGIN_USER_FAILED:
+      return {
+        ...state,
+        loading: false,
+        error: payload,
+      };
+    case GET_LOGGEDIN_USER:
+      return {
+        ...state,
+        loading: true,
+      };
+    case GET_LOGGEDIN_USER_SUCESSFUL:
+      return {
+        ...state,
+        loading: false,
+        user: payload,
+      };
+    case GET_LOGGEDIN_USER_FAILED:
       return {
         ...state,
         loading: false,

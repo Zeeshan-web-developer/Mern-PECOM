@@ -48,15 +48,25 @@
   margin-right: auto;
   transition: all 0.3s ease-in-out;
 }
-.checkout__button:hover {
-  background-color: white;
-  color: var(--primary);
-  border-color: var(--primary);
-  transition: all 0.3s ease-in-out;
-}
+
 .back__button:hover {
   background-color: white;
   color: var(--primary);
   border-color: var(--primary);
   transition: all 0.3s ease-in-out;
+}
+
+.checkout__btn {
+  background-color: #c70039;
+  border: none;
+  color: white;
+}
+.checkout__button:hover {
+  background-color: #fff;
+  color: #c70039;
+  border: 1px solid #c70039;
+}
+.checkout__btn:hover {
+  background-color: #fff;
+  color: #c70039;
 }

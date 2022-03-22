@@ -1,7 +1,12 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import { registerUserSuccessful, registerUserFailed } from "./actions";
-import { REGISTER_USER } from "./types";
-import { registerUser } from "../../ApiHelpers/apisHelper";
+import {
+  registerUserSuccessful,
+  registerUserFailed,
+  loginUserFailed,
+  loginUserSuccessful,
+} from "./actions";
+import { REGISTER_USER, LOGIN_USER } from "./types";
+import { registerUser, loginUser } from "../../ApiHelpers/apisHelper";
 
 function* signup({ payload }) {
   try {
@@ -14,9 +19,22 @@ function* signup({ payload }) {
     console.log(error);
   }
 }
+function* login({ payload }) {
+  try {
+    const response = yield call(loginUser, payload);
+    if (response) {
+      yield put(loginUserSuccessful(response));
+      window.location = "http://localhost:3000/";
+    }
+  } catch (error) {
+    yield put(loginUserFailed(error));
+    console.log(error);
+  }
+}
 
 function* UserSaga() {
   yield takeEvery(REGISTER_USER, signup);
+  yield takeEvery(LOGIN_USER, login);
 }
 
 export default UserSaga;

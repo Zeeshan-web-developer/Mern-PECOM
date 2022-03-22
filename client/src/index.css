@@ -37,3 +37,19 @@ h4 {
   top: -10px;
   opacity: 0.9;
 }
+.css-1s2u09g-control {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  width: auto !important;
+}
+.css-1s2u09g-control:focus {
+  outline: none !important;
+}
+.css-1s2u09g-control::selection {
+  background: none !important;
+  outline: none !important;
+}

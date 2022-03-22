@@ -3,9 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { Row, Container, Col } from "react-bootstrap";
 import { Navbar, Search, Pizza, Footer, Slider } from "../../components";
 import { getAllPizzas } from "../../store/actions";
+import Spinner from "../../common/Spinner";
 function App() {
   const dispatch = useDispatch();
-  const { Pizzas } = useSelector((state) => state.pizzas.pizzas);
+  const Pizzas = useSelector((state) => state.pizzas.pizzas.data);
+
+  console.log("🚀 ~ file: Home.jsx ~ line 9 ~ App ~ Pizzas", Pizzas);
+
   useEffect(() => {
     document.title = "Pizza";
     dispatch(getAllPizzas());
@@ -14,11 +18,14 @@ function App() {
   return (
     <Container>
       <Navbar />
-      {/* <Search /> */}
-      {/* <Slider /> */}
+      <Search />
+      <Slider />
       <Row>
-        {Pizzas &&
-          Pizzas.map((item, index) => <Pizza Pizza={item} key={item._id} />)}
+        {Pizzas ? (
+          Pizzas.map((item, index) => <Pizza Pizza={item} key={item._id} />)
+        ) : (
+          <Spinner />
+        )}
       </Row>
       <Footer />
     </Container>
