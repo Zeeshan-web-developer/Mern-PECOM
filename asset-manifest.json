@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/pizzahut/static/css/main.844770d6.css",
+    "main.js": "/pizzahut/static/js/main.fc3a2faf.js",
+    "static/css/923.6f1a6cf1.chunk.css": "/pizzahut/static/css/923.6f1a6cf1.chunk.css",
+    "static/js/923.5d4a09d8.chunk.js": "/pizzahut/static/js/923.5d4a09d8.chunk.js",
+    "static/css/712.cf54fb34.chunk.css": "/pizzahut/static/css/712.cf54fb34.chunk.css",
+    "static/js/712.844b95b1.chunk.js": "/pizzahut/static/js/712.844b95b1.chunk.js",
+    "static/js/648.00567f21.chunk.js": "/pizzahut/static/js/648.00567f21.chunk.js",
+    "static/css/678.799ad2bb.chunk.css": "/pizzahut/static/css/678.799ad2bb.chunk.css",
+    "static/js/678.eb05a014.chunk.js": "/pizzahut/static/js/678.eb05a014.chunk.js",
+    "static/css/174.15ba3102.chunk.css": "/pizzahut/static/css/174.15ba3102.chunk.css",
+    "static/js/174.180e1595.chunk.js": "/pizzahut/static/js/174.180e1595.chunk.js",
+    "static/js/40.74b6e31e.chunk.js": "/pizzahut/static/js/40.74b6e31e.chunk.js",
+    "static/js/753.a62d6913.chunk.js": "/pizzahut/static/js/753.a62d6913.chunk.js",
+    "static/js/619.763d358e.chunk.js": "/pizzahut/static/js/619.763d358e.chunk.js",
+    "static/media/notfound.png": "/pizzahut/static/media/notfound.ea32e4b1c2cfe7242ade.png",
+    "index.html": "/pizzahut/index.html",
+    "main.844770d6.css.map": "/pizzahut/static/css/main.844770d6.css.map",
+    "main.fc3a2faf.js.map": "/pizzahut/static/js/main.fc3a2faf.js.map",
+    "923.6f1a6cf1.chunk.css.map": "/pizzahut/static/css/923.6f1a6cf1.chunk.css.map",
+    "923.5d4a09d8.chunk.js.map": "/pizzahut/static/js/923.5d4a09d8.chunk.js.map",
+    "712.cf54fb34.chunk.css.map": "/pizzahut/static/css/712.cf54fb34.chunk.css.map",
+    "712.844b95b1.chunk.js.map": "/pizzahut/static/js/712.844b95b1.chunk.js.map",
+    "648.00567f21.chunk.js.map": "/pizzahut/static/js/648.00567f21.chunk.js.map",
+    "678.799ad2bb.chunk.css.map": "/pizzahut/static/css/678.799ad2bb.chunk.css.map",
+    "678.eb05a014.chunk.js.map": "/pizzahut/static/js/678.eb05a014.chunk.js.map",
+    "174.15ba3102.chunk.css.map": "/pizzahut/static/css/174.15ba3102.chunk.css.map",
+    "174.180e1595.chunk.js.map": "/pizzahut/static/js/174.180e1595.chunk.js.map",
+    "40.74b6e31e.chunk.js.map": "/pizzahut/static/js/40.74b6e31e.chunk.js.map",
+    "753.a62d6913.chunk.js.map": "/pizzahut/static/js/753.a62d6913.chunk.js.map",
+    "619.763d358e.chunk.js.map": "/pizzahut/static/js/619.763d358e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.844770d6.css",
+    "static/js/main.fc3a2faf.js"
+  ]
+}
