@@ -9,13 +9,10 @@ const usersRouter = require('./routes/users')
 
 db()
 dotenv.config()
-const Port = process.env.PORT || 9001
+const Port = process.env.PORT || 3000
 // Middlewares
 app.use(express.json())
 app.use(cors())
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
 app.use('/api/v1', pizzasRouter)
 app.use('/api/v1/auth', usersRouter)
 app.listen(Port, () => {
